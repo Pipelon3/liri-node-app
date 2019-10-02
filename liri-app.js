@@ -1,122 +1,169 @@
-var Spotify = require('node-spotify-api');
-var argument = process.argv[3];
-const keys = require('./keys.js');
-var request = require('request');
-var bandsintown = require('bandsintown');
-var fs = require('fs');
+require("dotenv").config(); 
 
+const axios = require("axios");
+const keys = require("./keys.js");
+const moment = require("moment");
+const fs = require("fs");
 
-var spotify = new Spotify(keys.spotify);
-var omdbKey = keys.omdb.api_key;
+let command = process.argv[2];
+let value = process.argv.slice(3).join(" ");
 
-
-const command = process.argv[2];
-const secondCommand = process.argv[3];
-
-switch (command) {
-    case ('spotify-this-song'):
-        if(secondCommand){
-            spotifyThisSong(secondCommand);
-         } else{
-            spotifyThisSong("Money Trees");
-         }
+switch(command){
+  case "concert-this":
+      bandsintownOutput(value);
+    break;
+  case "spotify-this-song":
+    spotifyOutput(value);
+    break;
+  case "movie-this":
+    omdbOutput(value);
     break;
 
-    case ('concert-this'):
-        if(secondCommand){
-            concertThis(secondCommand);
-        } else{
-            concertThis("Kendrick Lamar");
-        }
+  case "do-what-it-says":
+    doWhatItSays(value);
     break;
-    case ('movie-this'):
-        if(secondCommand){
-            omdb(secondCommand);
-        } else{
-            omdb("Pulp Fiction");
-        }
-    break;
-    case ('do-what-it-says'):
-         doThing();
-    break;
-    default:
-        console.log('Try again');
+  default: 
+    console.log("Please enter one of the following options: \nconcert-this \nspotify-this-song \nmovie-this \ndo-what-it-says")
+}
+
+/*---------SPOTIFY---------- */
+
+function showSongInfo(inputParameter) {
+  if (inputParameter === undefined) {
+      inputParameter = "Stronger";
+  }
+  spotify.search(
+      {
+          type: "track",
+          query: inputParameter
+      },
+      function (err, data) {
+          if (err) {
+              console.log("Error occurred: " + err);
+              return;
+          }
+          var songs = data.tracks.items;
+
+          for (var i = 0; i < songs.length; i++) {
+              console.log("**********SONG INFO*********");
+              fs.appendFileSync("log.txt", "**********SONG INFO*********\n");
+              console.log(i);
+              fs.appendFileSync("log.txt", i +"\n");
+              console.log("Song name: " + songs[i].name);
+              fs.appendFileSync("log.txt", "song name: " + songs[i].name +"\n");
+              console.log("Preview song: " + songs[i].preview_url);
+              fs.appendFileSync("log.txt", "preview song: " + songs[i].preview_url +"\n");
+              console.log("Album: " + songs[i].album.name);
+              fs.appendFileSync("log.txt", "album: " + songs[i].album.name + "\n");
+              console.log("Artist(s): " + songs[i].artists[0].name);
+              fs.appendFileSync("log.txt", "artist(s): " + songs[i].artists[0].name + "\n");
+              console.log("*****************************");  
+              fs.appendFileSync("log.txt", "*****************************\n");
+           }
+      }
+  );
 };
 
-function concertThis(){
-  bandsintown.getArtistEventList(argument).then(function (events) {
+/*---------Bandsintown---------- */
 
-  console.log(`
-  ${'Band: ' + argument}
-  ${'Venue Name: ' + events[0].venue.name}
-  ${'Location: ' + events[1].formatted_location}
-  ${'Date: ' + moment(events[0].datetime).format('L')}`);
-  fs.appendFile('log.txt', `
-  ${argument}
-  Venue Name: ${events[0].venue.name}
-  Location: ${events[1].formatted_location}
-  Date: ${moment(events[0].datetime).format('L')}
-  `,
+function bandsintownOutput(value) {
+  let bandsAPIKey = process.env.bandsintown_SECRET;
+  let queryURL = "https://rest.bandsintown.com/artists/" + value + "/events?app_id=" + bandsAPIKey
+  axios.get(queryURL).then(
+    function (response) {
+      console.log(response.data[0].venue.name);
+      console.log(response.data[0].venue.city);
+      console.log(moment(response.data[0].datetime).format('MM/DD/YYYY'));
+    },
 
-function (err) {
-    if (err) throw err;
-    console.log('Saved to log.txt!');
-      });
-    })
-  .catch(function (err) {
-    console.log(err.statusMessage);
-  });
-};
-
-function spotifyThisSong(song){
-  spotify.search({ type: 'track', query: song, limit: 1}, function(error, data){
-      if(!error){
-      for(var i = 0; i < data.tracks.items.length; i++){
-          var songData = data.tracks.items[i];
-                    //artist
-          console.log("Artist: " + songData.artists[0].name);
-                    //song
-          console.log("Song: " + songData.name);
-                    //preview link
-          console.log("Preview URL: " + songData.preview_url);
-                    //album
-          console.log("Album: " + songData.album.name);
-          console.log("-----------------------");
-          } 
+    function (error) {
+      if (error.response) {
+        console.log(error.response.data);
+        console.log(error.response.status);
+        console.log(error.response.headers);
+      } else if (error.request) {
+        console.log(error.request);
       } else {
-      console.log('Error occurred.');
+        console.log("Error", error.message);
       }
-    });
+      console.log(error.config);
+    }
+  );
 }
 
-function omdb(movie){
-    var omdbURL = 'http://www.omdbapi.com/?t=' + movie + '&apikey=trilogy&plot=short&tomatoes=true';
-      
-    request(omdbURL, function (error, response, body){
-      if(!error && response.statusCode == 200){
-        var body = JSON.parse(body);
-      
-        console.log("Title: " + body.Title);
-        console.log("Release Year: " + body.Year);
-        console.log("IMdB Rating: " + body.imdbRating);
-        console.log("Country: " + body.Country);
-        console.log("Language: " + body.Language);
-        console.log("Plot: " + body.Plot);
-        console.log("Actors: " + body.Actors);
-        console.log("Rotten Tomatoes Rating: " + body.tomatoRating);
-        console.log("Rotten Tomatoes URL: " + body.tomatoURL);
-            
-      } else{
-        console.log('Error occurred.', response)
+  /*---------OMDB Movies---------- */
+function omdbOutput(value) {
+  if(value === ""){
+     value = "Pulp Ficton";
+  }
+  let OMDBapikey = process.env.OMDB_SECRET;
+  let queryURL = "http://www.omdbapi.com/?t=" + value + "&y=&plot=short&apikey=" + OMDBapikey
+  axios
+    .get(queryURL)
+    .then(
+      function (response) {
+        
+        if(value ==="Pulp Fiction"){
+          console.log("\nHere's a summary of Pulp Fiction: http://www.imdb.com/title/tt0110912/");
+        }
+        else{
+          console.log("\nTitle of the Movie: " + response.data.Title);
+          console.log("\nYear of the Movie: " + response.data.Year);
+          console.log("\nIMDB rating of the Movie: " + response.data.imdbRating);
+          console.log("\nRotten Tomatoes Rating of the Movie: " + response.data.Ratings[1].Value);
+          console.log("\nCountry production of the Movie: " + response.data.Country);
+          console.log("\nLanguage/s of the Movie: " + response.data.Language);
+          console.log("\nPlot of the Movie: " + response.data.Plot);
+          console.log("\nActors in the Movie: " + response.data.Actors);
+        }
+      },
+
+      function (error) {
+        if (error.response) {
+          console.log(error.response.data);
+          console.log(error.response.status);
+          console.log(error.response.headers);
+        } else if (error.request) {
+          console.log(error.request);
+        } else {
+          console.log("Error", error.message);
+        }
+        console.log(error.config);
       }
-    });
-      
+    );
 }
-      
-function doThing(){
-  fs.readFile('random.txt', "utf8", function(error, data){
-    var txt = data.split(',');
-      
-    spotifyThisSong(txt[1]);
+
+//Rotten Tomatoes
+
+function getRottenTomatoesRatingObject (data) {
+  return data.Ratings.find(function (item) {
+     return item.Source === "Rotten Tomatoes";
+  });
+}
+
+function getRottenTomatoesRatingValue (data) {
+  return getRottenTomatoesRatingObject(data).Value;
+}
+  
+
+function doWhatItSays(){
+  fs.readFile("random.txt", "utf8", function (err, data) {
+    
+    if (err) {
+      return console.log(err);
+    }
+
+    data = data.split(",");
+    switch (data[0]) {
+      case "concert-this":
+          bandsintownOutput(data[1]);
+        break;
+      case "spotify-this-song":
+        spotifyOutput(data[1]);
+        break;
+      case "movie-this":
+        omdbOutput(data[1]);
+        break;
+    }
   });
 }
