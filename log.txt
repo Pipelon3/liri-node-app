@@ -1,0 +1,280 @@
+**********SONG INFO*********
+0
+song name: Runaway
+preview song: null
+album: Runaway
+artist(s): Sebastian Yatra
+*****************************
+**********SONG INFO*********
+1
+song name: Runaway
+preview song: null
+album: My Beautiful Dark Twisted Fantasy
+artist(s): Kanye West
+*****************************
+**********SONG INFO*********
+2
+song name: Runaway (U & I)
+preview song: https://p.scdn.co/mp3-preview/c1024d02ec15b93fe218692fb9ad23c5bad3e1aa?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Pharmacy
+artist(s): Galantis
+*****************************
+**********SONG INFO*********
+3
+song name: Runaway
+preview song: https://p.scdn.co/mp3-preview/1d5c73e63e8419d562aee484a882b8da2429147b?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Come Over When You're Sober, Pt. 2
+artist(s): Lil Peep
+*****************************
+**********SONG INFO*********
+4
+song name: Buy My Own Drinks
+preview song: https://p.scdn.co/mp3-preview/e378414800195c430533375799455d202938fce9?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Blue Roses
+artist(s): Runaway June
+*****************************
+**********SONG INFO*********
+5
+song name: Runaway Train
+preview song: https://p.scdn.co/mp3-preview/b7955ead5c4952e490595c31be111a3febf568a8?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Grave Dancers Union
+artist(s): Soul Asylum
+*****************************
+**********SONG INFO*********
+6
+song name: Runaway
+preview song: null
+album: Bon Jovi
+artist(s): Bon Jovi
+*****************************
+**********SONG INFO*********
+7
+song name: Runaway Baby
+preview song: https://p.scdn.co/mp3-preview/9e9a874c775f47ae1dc0a45d848f990f66f98854?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Doo-Wops & Hooligans
+artist(s): Bruno Mars
+*****************************
+**********SONG INFO*********
+8
+song name: Head Over Heels
+preview song: https://p.scdn.co/mp3-preview/5b3951ec116e3f2a48bdd4593add29d066571d9b?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Blue Roses
+artist(s): Runaway June
+*****************************
+**********SONG INFO*********
+9
+song name: Runaway
+preview song: https://p.scdn.co/mp3-preview/28c299674ba25aa86bc6229e75c64da73cdb5c80?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Hybrid Theory (Bonus Edition)
+artist(s): Linkin Park
+*****************************
+**********SONG INFO*********
+10
+song name: Runaway
+preview song: https://p.scdn.co/mp3-preview/cafdd7c272c561bb7a5268ca28ae40edfe39e426?cid=ee39a7e7a63643b390fd32357deddc4b
+album: All My Demons Greeting Me as a Friend (Deluxe)
+artist(s): AURORA
+*****************************
+**********SONG INFO*********
+11
+song name: Runaway (feat. Khalid)
+preview song: https://p.scdn.co/mp3-preview/0cb5712e225ae3f34d7d3f4a2b403575deb41674?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Runaway (feat. Khalid)
+artist(s): Tayla Parx
+*****************************
+**********SONG INFO*********
+12
+song name: Runaway
+preview song: https://p.scdn.co/mp3-preview/6c569c5a13fb7fbe6c97e4a7e59fc5eaf1f01857?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Runaway
+artist(s): Sasha Sloan
+*****************************
+**********SONG INFO*********
+13
+song name: Runaway
+preview song: https://p.scdn.co/mp3-preview/742e2dec0ca2de1810a40bad0cf663affcd327c0?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Runaway with Del Shannon
+artist(s): Del Shannon
+*****************************
+**********SONG INFO*********
+14
+song name: RUNAWAY
+preview song: https://p.scdn.co/mp3-preview/f5852096294f5c59008c40b3b8804210b7b1af26?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Now, Not Yet
+artist(s): half•alive
+*****************************
+**********SONG INFO*********
+15
+song name: RUNAWAY
+preview song: https://p.scdn.co/mp3-preview/2d8513fbb8813adc1760605b718a7c1a14671c46?cid=ee39a7e7a63643b390fd32357deddc4b
+album: RUNAWAY
+artist(s): half•alive
+*****************************
+**********SONG INFO*********
+16
+song name: Runaway
+preview song: https://p.scdn.co/mp3-preview/c9523bf44d832a0e8f92b612f4fcd0bab4f05aac?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Born Sinner
+artist(s): J. Cole
+*****************************
+**********SONG INFO*********
+17
+song name: Runaway
+preview song: https://p.scdn.co/mp3-preview/1c9c970de87343e71d9dc9b56e69fd6f07e65db0?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Runaway
+artist(s): Ziggy Alberts
+*****************************
+**********SONG INFO*********
+18
+song name: Runaway
+preview song: https://p.scdn.co/mp3-preview/6743366df492eb9a03a2a246037949aa13468fc4?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Runaway
+artist(s): Eric Nam
+*****************************
+**********SONG INFO*********
+19
+song name: Runaway
+preview song: https://p.scdn.co/mp3-preview/ed62d9ac93e4c3db0f7415f1b390a41430a5733c?cid=ee39a7e7a63643b390fd32357deddc4b
+album: x (Deluxe Edition)
+artist(s): Ed Sheeran
+*****************************
+**********SONG INFO*********
+0
+song name: Blue Lights
+preview song: https://p.scdn.co/mp3-preview/ad2d0a608605bdfe23bbe4f5d6fff3c1458af74c?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Lost & Found
+artist(s): Jorja Smith
+*****************************
+**********SONG INFO*********
+1
+song name: The Closer I Get to You
+preview song: https://p.scdn.co/mp3-preview/5c02136b41f5417d43a20a1c6df165798e62ab62?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Blue Lights in the Basement
+artist(s): Roberta Flack
+*****************************
+**********SONG INFO*********
+2
+song name: Blue Lights
+preview song: https://p.scdn.co/mp3-preview/84f44ea3227ab5b5cc43d8b0291682d2a878dab3?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Blue Lights
+artist(s): Jorja Smith
+*****************************
+**********SONG INFO*********
+3
+song name: Blue Lights - RISE Recording
+preview song: https://p.scdn.co/mp3-preview/bf1684a043623a29678db38aab8f3733336c3d98?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Blue Lights - RISE Recording
+artist(s): Jorja Smith
+*****************************
+**********SONG INFO*********
+4
+song name: Blue Lights
+preview song: https://p.scdn.co/mp3-preview/ef452ff9c56ca8ee1631ea690a288de11268cc6d?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Down Home Sessions II
+artist(s): Cole Swindell
+*****************************
+**********SONG INFO*********
+5
+song name: The Downtown Lights
+preview song: https://p.scdn.co/mp3-preview/abc4b11551557619ba03c2c75b8cfd33ae9537f9?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Hats
+artist(s): The Blue Nile
+*****************************
+**********SONG INFO*********
+6
+song name: Back & Forth - 6am Remix
+preview song: https://p.scdn.co/mp3-preview/8ff428f7fa1b2f24f49c8de8a4321e2818f91440?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Back & Forth (Remixes)
+artist(s): MK
+*****************************
+**********SONG INFO*********
+7
+song name: Blue Lights On
+preview song: https://p.scdn.co/mp3-preview/27540098a76473d22f2cf857c173e55dc208c158?cid=ee39a7e7a63643b390fd32357deddc4b
+album: High In The Saddle
+artist(s): Texas Hippie Coalition
+*****************************
+**********SONG INFO*********
+8
+song name: House Of Blue Lights
+preview song: null
+album: Blues
+artist(s): Chuck Berry
+*****************************
+**********SONG INFO*********
+9
+song name: Blue Lights (French Remix)
+preview song: https://p.scdn.co/mp3-preview/a645ea17118faa582b72c0ad71b88486be06db3a?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Blue Lights (French Remix)
+artist(s): Jorja Smith
+*****************************
+**********SONG INFO*********
+10
+song name: Fuzzy Blue Lights
+preview song: null
+album: Of June
+artist(s): Owl City
+*****************************
+**********SONG INFO*********
+11
+song name: Conga Blue - Vocal
+preview song: https://p.scdn.co/mp3-preview/7b61b39cc6e422e0da3b288ce4536335a08c4acc?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Little Flower
+artist(s): Peaking Lights
+*****************************
+**********SONG INFO*********
+12
+song name: Bright Lights Big City
+preview song: https://p.scdn.co/mp3-preview/68a2c7e25bf7a8f2539e5300197b3c396258cbc6?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Lil G.L.'s Blue Bonanza
+artist(s): Charley Crockett
+*****************************
+**********SONG INFO*********
+13
+song name: Lights
+preview song: https://p.scdn.co/mp3-preview/4ba9ff7ef5dbedb63eb808609d16dd1a714c1641?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Pale Blue Dot
+artist(s): The Prototypes
+*****************************
+**********SONG INFO*********
+14
+song name: Blue Skies
+preview song: https://p.scdn.co/mp3-preview/6699435afb32978b584a03840ea12ee4e2297c93?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Night Lights (feat. Jordan Officer)
+artist(s): Susie Arioli
+*****************************
+**********SONG INFO*********
+15
+song name: Blue Lights
+preview song: https://p.scdn.co/mp3-preview/efbedda6a9dccd32bc1ae889867b52d1178443cc?cid=ee39a7e7a63643b390fd32357deddc4b
+album: The Gus Glasser Lofi Mix
+artist(s): Gus Glasser
+*****************************
+**********SONG INFO*********
+16
+song name: Two Blue Lights
+preview song: https://p.scdn.co/mp3-preview/d8789a6afcf94a0059ebce9afde9dec0c6292958?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Didn't It Rain (Deluxe Edition)
+artist(s): Songs: Ohia
+*****************************
+**********SONG INFO*********
+17
+song name: Blue Lights
+preview song: https://p.scdn.co/mp3-preview/74fe5f165bd2a710f24b164f8e782976f77c1479?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Blue Lights
+artist(s): Steve & Jay
+*****************************
+**********SONG INFO*********
+18
+song name: House Of Blue Lights
+preview song: null
+album: I'm Wanted
+artist(s): George Thorogood
+*****************************
+**********SONG INFO*********
+19
+song name: Paris Lights
+preview song: https://p.scdn.co/mp3-preview/28a6aa39549a65524017e76fcec9fe2e828b97e8?cid=ee39a7e7a63643b390fd32357deddc4b
+album: Paris Lights
+artist(s): Blue Neuville
+*****************************

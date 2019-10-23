@@ -2,6 +2,8 @@ require("dotenv").config();
 
 const axios = require("axios");
 const keys = require("./keys.js");
+const Spotify = require('node-spotify-api');
+const spotify = new Spotify(keys.spotify);
 const moment = require("moment");
 const fs = require("fs");
 
@@ -28,7 +30,7 @@ switch(command){
 
 /*---------SPOTIFY---------- */
 
-function showSongInfo(inputParameter) {
+function spotifyOutput(inputParameter) {
   if (inputParameter === undefined) {
       inputParameter = "Stronger";
   }
@@ -92,6 +94,7 @@ function bandsintownOutput(value) {
 }
 
   /*---------OMDB Movies---------- */
+  
 function omdbOutput(value) {
   if(value === ""){
      value = "Pulp Ficton";
